@@ -37,9 +37,23 @@ import 'bootstrap/dist/css/bootstrap.css'
 // import R072_onSubmit from './R13/R072_onSubmit';
 // import R073_ReactRef from './R13/R073_ReactRef';
 // import R074_ReactCurrying from './R13/R074_ReactCurrying';
-import R075_ReactHoc from './R13/R075_ReactHoc1';
+// import R075_ReactHoc from './R13/R075_ReactHoc1';
+// import R076_ContextApi from './R13/R076_ContextApi';
+import HookUseStatus from './js/HookUseStatus';
+import HookUseMemo from './js/HookUseMemo'; //useMemo 샘플1
+import HookUseMemo2 from './js/HookUseMemo2'; //useMemo 샘플2
+import HookUseCallback from './js/HookUseCallback'; //useCallback 샘플1
+import HookBoxSample from './js/HookBoxSample' //useCallback 샘플2
+import HookReducer from './js/HookReducer' //useReducer 샘플1
+import HookReducer2 from './js/HookReducer2' //useReducer 샘플2
+import Page from './contextjs/Page';
+import { ThemeContext } from './contextjs/ThemeContext';
+import { UserContext } from './contextjs/UserContext';
+import { useState } from 'react';
 
 function App() {
+
+  const [isDark, setIsDark] = useState(false);
   return (
     <div className="App">
    
@@ -76,8 +90,20 @@ function App() {
       {/* <R072_onSubmit /> */}
       {/* <R073_ReactRef /> */}
       {/* <R074_ReactCurrying /> */}
-      <R075_ReactHoc />
-      
+      {/* <R075_ReactHoc /> */}
+      {/* <R076_ContextApi /> */}
+      {/* <HookUseStatus /> */}
+      {/* <UserContext.Provider value={'jung kyung joo'}>
+        <ThemeContext.Provider value={{ isDark , setIsDark }}>
+          <Page />
+        </ThemeContext.Provider>
+      </UserContext.Provider> */}
+      {/* <HookUseMemo /> */}
+      {/* <HookUseMemo2 /> */}
+      {/* <HookUseCallback /> */}
+      {/* <HookBoxSample /> */}
+      {/* <HookReducer /> */}
+      <HookReducer2 />
     </div>
   );
 }

@@ -5,7 +5,7 @@ class contextChildren2 extends React.Component {
     render () {
       return (
         <Consumer>
-            { contextValue  => <h3>{`contextValue : ${contextValue} ,${this.props.name}`}</h3>}
+            { contextValue  => <h3>{`contextValue : ${contextValue} `}</h3>}
         </Consumer>
       )
     }
